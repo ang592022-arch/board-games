@@ -1,0 +1,31 @@
+# Build output
+build/
+Bin/
+*.o
+*.obj
+*.exe
+*.out
+*.a
+*.lib
+*.dll
+*.so
+*.dylib
+
+# Editor and operating-system files
+.vs/
+.vscode/
+.idea/
+*.code-workspace
+*.user
+*.suo
+*.swp
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Logs and local coverage output
+*.log
+*.gcda
+*.gcno
+*.gcov
+coverage/
