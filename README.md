@@ -1,10 +1,47 @@
 # Board Games
 
-A small C++17 console project containing two playable board games, an
-N-Queen solver, and several independently tested programming exercises.
+A dependency-free C++17 console project focused on board-game rules,
+backtracking algorithms, modular design, and automated verification.
+
+`C++17` · `Gomoku` · `N-Queen Duel` · `Backtracking` · `185 checks passed`
 
 Originally developed as a university programming exercise and later
 reorganized and refactored into a standalone project.
+
+## Engineering snapshot
+
+| Area | Current implementation |
+| --- | --- |
+| Playable games | Two-player Gomoku and N-Queen Duel |
+| Algorithm | Recursive N-Queen backtracking solver for one or all solutions |
+| Design | Rule modules separated from the stream-based command-line interface |
+| Verification | **185 checks passed; 0 failed** with the repository test runner |
+| Dependencies | Standard library only; no third-party runtime or test dependency |
+
+## Console preview
+
+```text
+Board Games
+1. Gomoku
+2. N-Queen Duel
+3. N-Queen Solver
+0. Exit
+Choice:
+```
+
+The interface is intentionally terminal-only. A screenshot or short terminal
+recording can be added later without introducing a GUI or changing the game
+logic.
+
+## Highlights
+
+- Menu-driven play for Gomoku and N-Queen Duel.
+- Four-direction Gomoku win detection, draw handling, reset, and replay.
+- Eight-direction threat detection and terminal-state rules for N-Queen Duel.
+- Independent recursive solver for one or all N-Queen solutions.
+- Stream-based CLI paths that can be tested without launching a subprocess.
+- Automated coverage for game rules, algorithms, input handling, board
+  rendering, and retained data-structure exercises.
 
 ## Included modules
 
@@ -17,18 +54,6 @@ reorganized and refactored into a standalone project.
 
 Save and load are not implemented. Gomoku replay is available after a
 completed game.
-
-## Features
-
-- A menu-driven console application for Gomoku, N-Queen Duel, and the
-  N-Queen solver.
-- A small board model with bounds checks, cell access, clearing, and ASCII
-  rendering.
-- Game rules separated from command-line input and output.
-- Gomoku move history and deterministic replay.
-- Dependency-free automated tests for rules, solver behaviour, input
-  handling, and the retained exercise components.
-- An optional interactive 9x9 board-editing example.
 
 ## Project layout
 
